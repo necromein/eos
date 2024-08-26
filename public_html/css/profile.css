@@ -1,0 +1,72 @@
+#profile .bio-container {
+    /*
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    */
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+    gap: 1vw;
+
+}
+
+.bio-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+               
+}
+
+.avatar-container {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	overflow: hidden;    
+}
+
+.avatar-image {
+    
+	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+#EditForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    width: 28vw;
+    border-radius: 20px;
+    
+}
+
+.form-align, .add-input {
+    display: flex;
+    flex-direction: column;
+}

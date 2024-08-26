@@ -1,0 +1,124 @@
+body {
+    font-family: 'inter tight';
+    font-weight: 400;
+}
+
+.crud-panel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topic-title h2 {
+    font-family: 'unbounded';
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-style: normal;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+
+}
+
+.admin-tbl {
+    border-collapse: collapse;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 10px 20px #c1c2e3da);
+
+    margin-bottom: 4vh;
+}
+
+.admin-tbl th {
+    background-color: #c1c2e3;
+    text-align: center;
+
+}
+
+.admin-tbl th:first-child {
+    border-top-left-radius: 20px;
+    border-left: none;
+    border-top: none;
+}
+
+.admin-tbl th:last-child {
+    border-top-right-radius: 20px;
+    border-right: none;
+    border-top: none;
+}
+
+.admin-tbl th,
+.admin-tbl td {
+    padding: 10px;
+    border: 0.7px solid #c8c8c8;
+    border-top: 0;
+}
+
+.admin-tbl td:first-child,
+.admin-tbl td:last-child {
+    border-left: none;
+    border-right: none;
+}
+
+.admin-tbl tr:first-child td,
+.admin-tbl tr:last-child td {
+    border-top: none;
+    border-bottom: none;
+}
+
+.show-all-data {
+    display: flex;
+    justify-content: center;
+}
+
+
+#addUserForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    width: 30vw;
+    border-radius: 20px;
+    
+}
+
+/* Стиль для затемненного фона при открытом модальном окне */
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+
+.add-container {
+    display: grid;
+    /* grid-template-columns: 50% 50%; */ 
+}
+
+.add-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.editable {
+    background-color: #c1c2e32d;
+}
+
+.editable:hover {
+    background-color: #c1c2e368;
+}

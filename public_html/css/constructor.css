@@ -1,0 +1,6 @@
+
+.const-cont {
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}

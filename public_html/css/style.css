@@ -1,0 +1,687 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@700&display=swap'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,400;0,700;0,800;1,100;1,400&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #282828;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body p {
+    font-family: "inter tight";
+    font-weight: 400;
+}
+
+section {
+    margin-top: 10vh;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+        transform: scale(1.2);
+    }
+    50% {
+        scale: 1;
+        transform: scale(0.8);
+    }
+    to {
+        rotate: 360deg;
+        transform: scale(1.2);
+    }
+}
+
+#blob {
+    height: 27vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(25deg, #0061d2, #a865d4, #c53f80, #ee0c58);
+    animation: rotate 3s infinite;
+    filter: blur(10vmax);
+    opacity: 0.8;
+    z-index: -99;
+}
+
+#blur {
+    height: 20vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 5%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    /* background: linear-gradient(to right, #ff4976, #5f6fff); */
+    background: linear-gradient(25deg, #0050ee, #9448d1, #cf3cb5, #ff2799);
+    animation: rotate 10s infinite;
+    filter: blur(10vmax);
+    opacity: 0.4;
+    z-index: -99;
+}
+
+header {
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    width: 100%;
+    border-bottom: 0.7px solid #ccc;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+/* header .sitenavigation {
+    display: flex;
+    align-items: center;
+} */
+
+header .sitenavigation a {
+    padding-right: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: #282828;
+}
+
+header a {
+    color: #282828;
+    font-family: "unbounded";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+header a:hover {
+    color: #373638;
+}
+
+header .auth-button-box {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #282828;
+    font-family: "unbounded";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button-box {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "unbounded";
+    font-weight: 400;
+    color: #282828;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button-box:hover,
+.auth-button-box:hover,
+.btn-box:hover,
+.btn-footer:hover {
+    filter: drop-shadow(0px 0px 3px #c1c2e3c2);
+    background-color: #fff;
+    transform: scale(0.98, 0.98);
+}
+
+.btn-box {
+    color: #282828;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 43px;
+    font-size: 1rem;
+    font-family: "unbounded";
+    padding: 1vh 4vh;
+    line-height: 6vh;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* .btn-box:hover {
+    filter: drop-shadow(0px 0px 5px #c1c2e3);
+    background-color: #fff;
+    transform: scale(0.95, 0.95);
+} */
+
+.input-box {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* cursor: text; */
+    background-color: transparent;
+    font-family: "unbounded";
+}
+
+input::file-selector-button {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* cursor: text; */
+    background-color: transparent;
+    font-family: "unbounded";
+}
+
+input.input-box:focus,
+textarea {
+    outline-color: grey;
+}
+
+::placeholder {
+    font-family: "unbounded";
+}
+
+#main-page {
+    height: 750px;
+}
+
+#main-page .main-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    height: 120px;
+}
+
+#main-page .main-title img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+#main-page h1 {
+    font-family: "unbounded";
+    font-weight: 800;
+    font-size: 5rem;
+    font-style: normal;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+/* #main-page .inverse {
+    color: transparent;
+
+    outline: 2px #282828;
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+} */
+
+#main-page .regtext {
+    color: #282828;
+}
+
+#main-page p {
+    margin-top: 20px;
+    width: 60vw;
+    font-family: "unbounded";
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+#main-page .arrow {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    animation: spin 1.3s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.topic-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.star-img {
+    height: 3rem;
+}
+
+.topic-title h2 {
+    font-family: "unbounded";
+    font-weight: 700;
+    font-size: 3rem;
+    font-style: normal;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "unbounded";
+    font-size: 2rem;
+    font-style: normal;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "unbounded" !important;
+    font-size: 1rem !important;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+/* .inverse {
+    color: transparent;
+
+} */
+
+.regtext {
+    color: #282828;
+}
+
+#main-courses .post-script {
+    font-size: 1rem;
+    font-family: "unbounded";
+}
+
+footer {
+    width: 100%;
+    margin-top: 10vh;
+    border-top: 0.7px solid #ccc;
+    background-color: #ffffff;
+    color: #282828;
+}
+
+footer .fcontainer {
+    margin-left: 300px;
+    margin-right: 300px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+footer p {
+    font-family: "unbounded";
+}
+
+.logo-footer {
+    margin-bottom: 40px;
+}
+
+footer h4 {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+footer h4:after {
+    position: absolute;
+    content: "";
+    background: rgba(128, 128, 128, 0.3);
+    width: 50%;
+    height: 1px;
+    left: 0;
+    bottom: -2vh;
+}
+
+.btn-footer {
+    color: #282828;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 43px;
+    font-size: 1rem;
+    font-family: "unbounded";
+    padding: 1vh 4vh;
+    line-height: 6vh;
+}
+
+
+/* .btn-footer:hover {
+    text-decoration: none;
+} */
+
+footer ul li {
+    list-style: none;
+    display: block;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #282828;
+    text-decoration: none;
+    font-family: "unbounded";
+}
+
+
+/* footer a:hover {
+    text-decoration: none;
+    color: #7e7e7e !important;
+
+} */
+
+.logo-part {
+    border-right: 0.7px solid rgba(128, 128, 128, 0.3);
+    height: 100%;
+    margin-right: 1.2vw;
+}
+
+
+
+/* START TOOLTIP STYLES */
+[tooltip] {
+    position: relative; /* opinion 1 */
+  }
+  
+  /* Applies to all tooltips */
+  [tooltip]::before,
+  [tooltip]::after {
+    text-transform: none; /* opinion 2 */
+    font-size: .9em; /* opinion 3 */
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+  }
+  [tooltip]::before {
+    content: '';
+    border: 5px solid transparent; /* opinion 4 */
+    z-index: 1001; /* absurdity 1 */
+  }
+  [tooltip]::after {
+    content: attr(tooltip); /* magic! */
+    
+    /* most of the rest of this is opinion */
+    font-family: 'inter tight';
+    text-align: center;
+    
+    /* 
+      Let the content set the size of the tooltips 
+      but this will also keep them from being obnoxious
+      */
+    min-width: 10em;
+    max-width: 50em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1ch 1.5ch;
+    border-radius: 20px;
+    /* box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35); */
+    background: #dedede;
+    color: #282828;
+    z-index: 1000; /* absurdity 2 */
+  }
+
+  [tooltip="Введите краткий обзор содержания и особенностей курса"] {
+    white-space: normal;
+}
+
+  /* Make the tooltips respond to hover */
+  [tooltip]:hover::before,
+  [tooltip]:hover::after {
+    display: block;
+  }
+  
+  /* don't show empty tooltips */
+  [tooltip='']::before,
+  [tooltip='']::after {
+    display: none !important;
+  }
+  
+  /* FLOW: UP */
+  [tooltip]:not([flow])::before,
+  [tooltip][flow^="up"]::before {
+    bottom: 100%;
+    border-bottom-width: 0;
+    border-top-color: #dedede;
+  }
+  [tooltip]:not([flow])::after,
+  [tooltip][flow^="up"]::after {
+    bottom: calc(100% + 5px);
+  }
+  [tooltip]:not([flow])::before,
+  [tooltip]:not([flow])::after,
+  [tooltip][flow^="up"]::before,
+  [tooltip][flow^="up"]::after {
+    left: 50%;
+    transform: translate(-50%, -.5em);
+  }
+  
+  /* FLOW: DOWN */
+  [tooltip][flow^="down"]::before {
+    top: 100%;
+    border-top-width: 0;
+    border-bottom-color: #dedede;
+  }
+  [tooltip][flow^="down"]::after {
+    top: calc(100% + 5px);
+  }
+  [tooltip][flow^="down"]::before,
+  [tooltip][flow^="down"]::after {
+    left: 50%;
+    transform: translate(-50%, .5em);
+  }
+  
+  /* FLOW: LEFT */
+  [tooltip][flow^="left"]::before {
+    top: 50%;
+    border-right-width: 0;
+    border-left-color: #dedede;
+    left: calc(0em - 5px);
+    transform: translate(-.5em, -50%);
+  }
+  [tooltip][flow^="left"]::after {
+    top: 50%;
+    right: calc(100% + 5px);
+    transform: translate(-.5em, -50%);
+  }
+  
+  /* FLOW: RIGHT */
+  [tooltip][flow^="right"]::before {
+    top: 50%;
+    border-left-width: 0;
+    border-right-color: #dedede;
+    right: calc(0em - 5px);
+    transform: translate(.5em, -50%);
+  }
+  [tooltip][flow^="right"]::after {
+    top: 50%;
+    left: calc(100% + 5px);
+    transform: translate(.5em, -50%);
+  }
+  
+  /* KEYFRAMES */
+  @keyframes tooltips-vert {
+    to {
+      opacity: .9;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  @keyframes tooltips-horz {
+    to {
+      opacity: .9;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  /* FX All The Things */ 
+  [tooltip]:not([flow]):hover::before,
+  [tooltip]:not([flow]):hover::after,
+  [tooltip][flow^="up"]:hover::before,
+  [tooltip][flow^="up"]:hover::after,
+  [tooltip][flow^="down"]:hover::before,
+  [tooltip][flow^="down"]:hover::after {
+    animation: tooltips-vert 300ms ease-out forwards;
+  }
+  
+  [tooltip][flow^="left"]:hover::before,
+  [tooltip][flow^="left"]:hover::after,
+  [tooltip][flow^="right"]:hover::before,
+  [tooltip][flow^="right"]:hover::after {
+    animation: tooltips-horz 300ms ease-out forwards;
+  }
+  
+
+@media (max-width: 1800px) {
+    header .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    section {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    .blur img {
+        height: 900px;
+        margin-right: -100px;
+    }
+    #main-page p {
+        width: 50vw;
+    }
+    #main-page .main-title {
+        margin-top: 150px;
+        margin-bottom: 30px;
+        height: 100px;
+    }
+    #main-page .main-title img {
+        height: 60px;
+        margin-right: 10px;
+    }
+    .auth-modal-box {
+        max-width: 690px;
+    }
+    #main-page .arrow {
+        top: 130px;
+    }
+    #main-page .arrow img {
+        height: 18px;
+    }
+    footer .fcontainer {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+@media (max-width: 1015px) {
+    section {
+        margin-top: 8vh;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    header .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    #blob {
+        animation: none;
+    }
+    .star-img {
+        height: 1.2rem;
+    }
+    .blur img {
+        height: 30vw;
+        margin-right: -100px;
+    }
+    #main-page h1 {
+        font-size: 1.8rem;
+        letter-spacing: 2vw;
+    }
+    .topic-title h2 {
+        font-size: 1rem;
+        /* letter-spacing: 1vw; */
+    }
+    #main-page p {
+        width: 100%;
+    }
+    #main-page .main-title {
+        margin-top: 15vh;
+        margin-bottom: 30px;
+        height: 100px;
+    }
+    #main-page .main-title img {
+        height: 2rem;
+        margin-right: 10px;
+    }
+    .auth-modal-box {
+        max-width: 690px;
+    }
+    #main-page .arrow {
+        top: 130px;
+    }
+    .regtext {
+        font-size: 1rem;
+        font-style: normal;
+        letter-spacing: 1vw;
+    }
+    footer .fcontainer {
+        grid-template-columns: 1fr;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    .logo-part {
+        border-right: none;
+    }
+    
+    header .auth-button-box {
+        display: none ;
+    }
+
+}

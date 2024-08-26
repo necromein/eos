@@ -1,0 +1,130 @@
+.col-sm-6 {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 1vh;
+}
+
+.progress {
+    font-size: 0.5rem !important;
+}
+
+.pl-progress-block:first-child {
+    border: 0 none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.pl-progress-block .text-center.mt20.clearfix {
+    margin: 0 !important;
+}
+
+.pl-border-sprtr {
+    text-align: center;
+}
+
+.pl-progress-block label {
+    color: #777575;
+}
+
+.pl-progress-block .progress {
+    border-radius: 35px;
+    height: 1vh;
+    background: #dcdedf;
+    /* margin-bottom: 25px; */
+}
+
+.pl-progress-block .progress-bar {
+    border-radius: 35px;
+    width: 0%;
+}
+
+.pl-progress-block .progress-bar span {
+    color: #777575;
+    line-height: 29px;
+    position: absolute;
+    right: 3%;
+}
+
+.pl-progress-block .progress-1 .progress-bar {
+    background-color: #7f2fd9;
+    transition: width ease-in 1s;
+    -webkit-transition: width ease-in 1s;
+    -moz-transition: width ease-in 1s;
+    -o-transition: width ease-in 1s;
+}
+
+.progress-bar {
+    background-color: grey;
+}
+
+.wrapper #left {
+    left: 12vw;
+}
+
+.wrapper #right {
+    right: 12vw;
+}
+
+.wrapper span {
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    transform: translateY(-50%);
+}
+
+.wrapper span img {
+    height: 3vh;
+}
+
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4));
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    height: 26vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+    color: #292929 !important;
+}
+
+.box-progress-bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 8px 0;
+}
+
+.box-progress-header {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 0;
+}
+
+.box-progress-percentage {
+    text-align: right;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.box-progress {
+    display: block;
+    height: 4px;
+    border-radius: 6px;
+}
+
+h4 {
+    margin-bottom: 2vh!important;
+}
